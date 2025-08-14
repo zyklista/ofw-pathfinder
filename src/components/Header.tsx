@@ -8,14 +8,17 @@ import {
   Globe,
   PenTool
 } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  
   return (
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border/50 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-soft">
               <BookOpen className="w-6 h-6 text-white" />
             </div>
@@ -25,21 +28,31 @@ const Header = () => {
               </h1>
               <p className="text-xs text-muted-foreground hidden sm:block">Your Professional Partner</p>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation - Desktop */}
             <nav className="hidden lg:flex items-center gap-8">
+              <Link 
+                to="/stories" 
+                className={`text-sm font-medium hover:text-primary transition-colors ${
+                  location.pathname === '/stories' ? 'text-primary' : ''
+                }`}
+              >
+                Stories
+              </Link>
+              <Link 
+                to="/resources" 
+                className={`text-sm font-medium hover:text-primary transition-colors ${
+                  location.pathname === '/resources' ? 'text-primary' : ''
+                }`}
+              >
+                Resources
+              </Link>
               <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">
                 Services
               </a>
-              <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">
-                About
-              </a>
               <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
                 Contact
-              </a>
-              <a href="#portfolio" className="text-sm font-medium hover:text-primary transition-colors">
-                Portfolio
               </a>
             </nav>
 
