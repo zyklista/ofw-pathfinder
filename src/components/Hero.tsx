@@ -35,17 +35,19 @@ const Hero = () => {
                 size="lg" 
                 variant="secondary"
                 className="text-lg px-8 py-6 rounded-full shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Share Your Story
+                Our Services
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
                 className="text-lg px-8 py-6 rounded-full border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:scale-105 transition-all duration-300"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Users className="mr-2 w-5 h-5" />
-                Join Community
+                Get In Touch
               </Button>
             </div>
 

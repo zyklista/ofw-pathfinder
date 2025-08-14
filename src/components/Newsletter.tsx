@@ -6,7 +6,7 @@ import { Mail, Send, Globe } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary via-primary-glow to-accent relative overflow-hidden">
+    <section id="contact" className="py-20 bg-gradient-to-r from-primary via-primary-glow to-accent relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_2px_2px,_white_2px,_transparent_0)] bg-[size:60px_60px]" />
@@ -24,12 +24,12 @@ const Newsletter = () => {
                   </Badge>
                   
                   <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Never Miss a Story
+                    Get In Touch
                   </h2>
                   
                   <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Get weekly updates featuring the most inspiring OFW stories, 
-                    community highlights, and exclusive content delivered to your inbox.
+                    Ready to start your project? Contact us today for a free consultation 
+                    and let's discuss how we can help bring your ideas to life.
                   </p>
                 </div>
 
@@ -37,23 +37,23 @@ const Newsletter = () => {
                 <div className="max-w-md mx-auto">
                   <div className="flex flex-col sm:flex-row gap-3">
                     <div className="flex-1">
-                      <Input 
-                        type="email" 
-                        placeholder="Enter your email address"
-                        className="w-full px-6 py-4 text-lg border-2 border-border/50 focus:border-primary rounded-full bg-background"
-                      />
+                        <Input 
+                          type="email" 
+                          placeholder="Enter your email for project quotes"
+                          className="w-full px-6 py-4 text-lg border-2 border-border/50 focus:border-primary rounded-full bg-background"
+                        />
                     </div>
                     <Button 
                       size="lg"
                       className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent hover:from-primary-glow hover:to-accent text-white font-semibold shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105"
                     >
                       <Send className="w-5 h-5 mr-2" />
-                      Subscribe
+                      Contact Us
                     </Button>
                   </div>
                   
                   <p className="text-sm text-muted-foreground mt-3">
-                    Join 12,000+ OFWs already subscribed. Unsubscribe anytime.
+                    Free consultation • Quick response • Professional service
                   </p>
                 </div>
 

@@ -21,27 +21,27 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                OFW Hub
+                Diary of an OFW
               </h1>
-              <p className="text-xs text-muted-foreground hidden sm:block">Diary ng mga Bayani</p>
+              <p className="text-xs text-muted-foreground hidden sm:block">Your Professional Partner</p>
             </div>
           </div>
 
           {/* Navigation - Desktop */}
-          <nav className="hidden lg:flex items-center gap-8">
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Stories
-            </a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Categories
-            </a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Community
-            </a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Resources
-            </a>
-          </nav>
+            <nav className="hidden lg:flex items-center gap-8">
+              <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">
+                Services
+              </a>
+              <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+                About
+              </a>
+              <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
+                Contact
+              </a>
+              <a href="#portfolio" className="text-sm font-medium hover:text-primary transition-colors">
+                Portfolio
+              </a>
+            </nav>
 
           {/* Actions */}
           <div className="flex items-center gap-3">
@@ -50,10 +50,10 @@ const Header = () => {
               <Search className="w-4 h-4" />
             </Button>
 
-            {/* Write Story */}
-            <Button variant="outline" size="sm" className="hidden md:flex rounded-full">
+            {/* Get Quote */}
+            <Button variant="outline" size="sm" className="hidden md:flex rounded-full" onClick={() => window.location.href = '#contact'}>
               <PenTool className="w-4 h-4 mr-2" />
-              Write Story
+              Get Quote
             </Button>
 
             {/* Language Toggle */}
