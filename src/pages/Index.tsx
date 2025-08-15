@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import FeaturedStories from "@/components/FeaturedStories";
+import SpotifyEpisodes from "@/components/SpotifyEpisodes";
 import Services from "@/components/Services";
 import ContactForm from "@/components/ContactForm";
 import Newsletter from "@/components/Newsletter";
@@ -12,7 +12,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <FeaturedStories />
+        <SpotifyEpisodes />
         <Services />
         <ContactForm />
         <Newsletter />
