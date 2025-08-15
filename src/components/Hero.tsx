@@ -22,7 +22,7 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight">
                 Diary of an
                 <span className="block bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-                  OFW Hub
+                  OFW
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-primary-foreground/90 max-w-2xl leading-relaxed">
@@ -37,7 +37,7 @@ const Hero = () => {
                 className="text-lg px-8 py-6 rounded-full shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Our Services
+                Watch Our Latest Episode
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 
@@ -47,7 +47,7 @@ const Hero = () => {
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Users className="mr-2 w-5 h-5" />
-                Get In Touch
+                Share Your Story
               </Button>
             </div>
 
@@ -69,12 +69,12 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-strong transform rotate-2 hover:rotate-0 transition-transform duration-500">
+          <div className="relative flex justify-center">
+            <div className="relative rounded-3xl overflow-hidden shadow-strong transform hover:scale-105 transition-transform duration-500">
               <img 
                 src={heroImage} 
                 alt="OFW Community" 
-                className="w-full h-[600px] object-cover"
+                className="w-full max-w-md h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
             </div>
@@ -86,12 +86,13 @@ const Hero = () => {
                 <span className="text-sm font-medium">Live Stories</span>
               </div>
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-secondary p-4 rounded-2xl shadow-medium">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-secondary-foreground">24/7</div>
-                <div className="text-xs text-secondary-foreground/80">Support</div>
-              </div>
-            </div>
+          </div>
+        </div>
+        
+        {/* Scroll Down Arrow */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-primary-foreground/50 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>

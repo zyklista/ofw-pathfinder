@@ -36,19 +36,35 @@ const FeaturedStories = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted">
-      <div className="container mx-auto px-4">
+    <section className="py-20 relative overflow-hidden">
+      {/* Art Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,_hsl(var(--primary))_0%,_transparent_50%)] opacity-5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_75%,_hsl(var(--accent))_0%,_transparent_50%)] opacity-5"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,_transparent_30%,_hsl(var(--secondary))_50%,_transparent_70%)] opacity-3"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Header */}
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4 px-6 py-2 text-sm">
-            Featured Stories
-          </Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Inspiring Journeys
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <Heart className="w-4 h-4" />
+            Our Mission
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            Our Story
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Real stories from fellow OFWs who are making their mark around the world. 
-            Each story is a testament to Filipino resilience and determination.
-          </p>
+          <div className="max-w-5xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Diary of an OFW is dedicated to capturing the raw, unfiltered journeys of Overseas Filipino Workers across the globe. We shine a light on the extraordinary achievements and untold stories of Filipinos who have carved out greatness far from home.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Through intimate conversations with notable individuals—especially those thriving in foreign lands—we uncover hidden truths, life-changing lessons, and meaningful insights.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed font-medium">
+              Our mission is to inspire, uplift, and empower our audience to live with greater joy, purpose, and fulfillment by sharing the voices and victories of the global Filipino community.
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
