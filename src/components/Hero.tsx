@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium">
                 <Heart className="w-4 h-4" />
-                Diary ng mga Bayani
+                Ito ang Kwento Nyo
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight">
                 Diary of an

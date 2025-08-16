@@ -30,60 +30,6 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Navigation - Desktop */}
-            <nav className="hidden lg:flex items-center gap-8">
-              <Link 
-                to="/stories" 
-                className={`text-sm font-medium hover:text-primary transition-colors ${
-                  location.pathname === '/stories' ? 'text-primary' : ''
-                }`}
-              >
-                Stories
-              </Link>
-              <Link 
-                to="/resources" 
-                className={`text-sm font-medium hover:text-primary transition-colors ${
-                  location.pathname === '/resources' ? 'text-primary' : ''
-                }`}
-              >
-                Resources
-              </Link>
-              <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">
-                Services
-              </a>
-              <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
-                Contact
-              </a>
-            </nav>
-
-          {/* Actions */}
-          <div className="flex items-center gap-3">
-            {/* Search */}
-            <Button variant="ghost" size="sm" className="hidden sm:flex">
-              <Search className="w-4 h-4" />
-            </Button>
-
-            {/* Get Quote */}
-            <Button variant="outline" size="sm" className="hidden md:flex rounded-full" onClick={() => window.location.href = '#contact'}>
-              <PenTool className="w-4 h-4 mr-2" />
-              Get Quote
-            </Button>
-
-            {/* Language Toggle */}
-            <Button variant="ghost" size="sm">
-              <Globe className="w-4 h-4" />
-            </Button>
-
-            {/* Profile */}
-            <Button variant="ghost" size="sm">
-              <User className="w-4 h-4" />
-            </Button>
-
-            {/* Mobile Menu */}
-            <Button variant="ghost" size="sm" className="lg:hidden">
-              <Menu className="w-4 h-4" />
-            </Button>
-          </div>
         </div>
       </div>
     </header>
