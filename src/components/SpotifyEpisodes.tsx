@@ -11,7 +11,7 @@ const SpotifyEpisodes = () => {
       duration: "45 min",
       date: "Dec 15, 2024",
       thumbnail: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
-      spotifyUrl: "https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty"
+      spotifyUrl: "https://spotifycreators-web.app.link/e/qQFi4i31SVb"
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const SpotifyEpisodes = () => {
       duration: "38 min",
       date: "Dec 8, 2024",
       thumbnail: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop",
-      spotifyUrl: "https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty"
+      spotifyUrl: "https://spotifycreators-web.app.link/e/SVISRm31SVb"
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const SpotifyEpisodes = () => {
       duration: "52 min",
       date: "Dec 1, 2024",
       thumbnail: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400&h=300&fit=crop",
-      spotifyUrl: "https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty"
+      spotifyUrl: "https://spotifycreators-web.app.link/e/at6N6n31SVb"
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const SpotifyEpisodes = () => {
       duration: "41 min",
       date: "Nov 24, 2024",
       thumbnail: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=300&fit=crop",
-      spotifyUrl: "https://open.spotify.com/show/5oJDj8gVSPa87Mds6Oe9ty"
+      spotifyUrl: "https://spotifycreators-web.app.link/e/xBLGOp31SVb"
     }
   ];
 

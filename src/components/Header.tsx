@@ -30,6 +30,10 @@ const Header = () => {
             </div>
           </Link>
 
+          {/* Tagline */}
+          <div className="text-lg font-semibold text-primary">
+            Ito ang Kwento Nyo
+          </div>
         </div>
       </div>
     </header>
